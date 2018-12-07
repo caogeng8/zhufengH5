@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>珠峰培训</title>
+    <link rel="icon" href="">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--重置样式表要放在最上面-->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <!--suiper插件自带的样式表-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--header-->
+<header class="header">
+    <div class="logo">
+        <div class="logo-pic"></div>
+        <p class="logo-txt">珠峰培训</p>
+    </div>
+    <ul class="menus">
+        <li><a href="#">Node课程培训</a></li>
+        <li><a href="#">Node课程培训</a></li>
+        <li><a href="#">Node课程培训</a></li>
+        <li><a href="#">Node课程培训</a></li>
+    </ul>
+    <div class="menu-pic"></div>
+</header>
+
+<!--banner-->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/banner1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/banner2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/banner3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/banner4.jpg" alt=""></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+
+    <!--    &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>-->
+
+    <!--    &lt;!&ndash; 如果需要滚动条 &ndash;&gt;
+        <div class="swiper-scrollbar"></div>-->
+</div>
+
+<!--main-->
+<section class="main">
+    <div class="main-title">
+        <img src="images/icon-book.png" alt="">
+        <span>全部课程</span>
+    </div>
+    <div class="items">
+        <div class="item">
+            <a href="#">
+                <img src="images/Layer1.png" alt="">
+                <div class="item-txt">
+                    <p class="state">Vue.js从理论精讲到项目实战课程</p>
+                    <p class="price">￥599.00元</p>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/Layer2.png" alt="">
+                <div class="item-txt">
+                    <p class="state">Vue.js从理论精讲到项目实战课程</p>
+                    <p class="price">￥599.00元</p>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/Layer3.png" alt="">
+                <div class="item-txt">
+                    <p class="state">Vue.js从理论精讲到项目实战课程</p>
+                    <p class="price">￥599.00元</p>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/Layer4.png" alt="">
+                <div class="item-txt">
+                    <p class="state">Vue.js从理论精讲到项目实战课程</p>
+                    <p class="price">￥599.00元</p>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/Layer5.png" alt="">
+                <div class="item-txt">
+                    <p class="state">Vue.js从理论精讲到项目实战课程</p>
+                    <p class="price">￥599.00元</p>
+                </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/Layer6.png" alt="">
+                <div class="item-txt">
+                    <p class="state">Vue.js从理论精讲到项目实战课程</p>
+                    <p class="price">￥599.00元</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<ul class="footer clearfix">
+    <li class="footer-left">
+        <a href="#">
+            <div class="footer-pic"></div>
+            <p class="first">首页</p>
+        </a>
+    </li>
+    <li class="footer-center">
+        <a href="#">
+            <div class="footer-pic"></div>
+            <p class="second">我的课程</p>
+        </a>
+    </li>
+    <li class="footer-right">
+        <a href="#">
+            <div class="footer-pic"></div>
+            <p class="third">个人中心</p>
+        </a>
+    </li>
+</ul>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+    /*    <!--动态判断js-->*/
+    function refreshRem() {
+        var desW = 750,
+            winW = document.documentElement.clientWidth,
+            ratio = winW / desW;
+        document.documentElement.style.fontSize = ratio * 100 + 'px';
+    }
+    refreshRem();
+    window.addEventListener('resize', refreshRem);
+
+    /*banner插件*/
+    var mySwiper = new Swiper('.swiper-container', {
+        /*direction: 'vertical', // 垂直切换选项*/
+        loop: true, // 循环模式选项
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false/*用户操作之后，每次都开启autoplay*/
+        },
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination'
+
+            /*type:'fraction' 分式,分页器变为 例：1/5  */
+        }
+
+        /*        // 如果需要前进后退按钮
+         navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev'
+         },
+
+         // 如果需要滚动条
+         scrollbar: {
+         el: '.swiper-scrollbar'
+         }*/
+    })
+</script>
+</body>
+</html>

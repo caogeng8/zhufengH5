@@ -1,0 +1,176 @@
+html {
+    font-size: 100px;
+}
+
+.header {
+    width: 100%;
+    background-color: #252525;
+    height: 1.12rem;
+    position: relative;
+}
+
+.logo {
+    width: 2.1rem;
+    height: .62rem;
+    overflow: hidden;
+    float: left;
+    margin-top: .23rem;
+    margin-left: .16rem;
+}
+
+.logo-pic {
+    height: 100%;
+    background: url("../images/logo.png") no-repeat;
+    background-size: cover;
+}
+
+.logo-txt {
+    margin-left: -999rem;
+}
+
+.menus {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 1.12rem;
+    background-color: #252525;
+    padding: 0 .2rem;
+    box-sizing: border-box;
+}
+
+.menus li {
+    width: 100%;
+    height: .85rem;
+    line-height: .85rem;
+
+    text-align: center;
+    border-top: 1px solid #a9b0b4;
+
+}
+
+.menus li a {
+    color: #ffffff;
+    font-size: .2rem;
+}
+
+.menu-pic {
+    width: .36rem;
+    height: .32rem;
+    background: url("../images/icon-top.png") no-repeat;
+    background-size: cover;
+    float: right;
+    margin-right: .23rem;
+    margin-top: .4rem;
+    cursor: pointer;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    font-size: 0;
+}
+
+.swiper-container img {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+}
+
+.main-title {
+    padding-left: .19rem;
+    height: .99rem;
+    line-height: .99rem;
+}
+
+.main-title img {
+    display: inline-block;
+    width: .29rem;
+    height: .35rem;
+
+    vertical-align: middle;
+}
+
+.main-title span {
+    font-size: .26rem;
+    color: #4C4B4B;
+    vertical-align: middle;
+    font-weight: 400;
+    margin-left: .12rem;
+}
+
+.items {
+    width: 100%;
+    padding: 0 .19rem;
+    box-sizing: border-box;
+    border-radius: .05rem;
+}
+
+.item {
+    width: 100%;
+    box-shadow: 0 5px 6px rgba(178, 178, 178, .75);
+    margin-bottom: .5rem;
+}
+
+.item img {
+    width: 100%;
+    border-radius: .05rem;
+}
+
+.item-txt {
+    width: 100%;
+    text-align: center;
+    font-size: .28rem;
+    padding-top: .32rem;
+}
+
+.state {
+    color: #777777;
+    padding-bottom: .22rem;
+}
+
+.price {
+    color: #ED3A3A;
+    padding-bottom: .34rem;
+}
+
+.footer {
+    width: 100%;padding-bottom:.25rem;
+}
+
+.footer>li {
+    width: 33.33%;
+    float: left;
+}
+.footer li a{
+    display:block;
+}
+.footer>li a>div{margin:0 auto;}
+.footer-left .footer-pic{
+    width:.46rem;height:.32rem;
+    background:url("../images/diqiu-b.png") no-repeat;
+    background-size: cover;
+}
+.footer-center .footer-pic{
+    width:.4rem;height:.39rem;background: url("../images/quan-a.png") no-repeat;background-size: cover;
+}
+.footer-right .footer-pic{
+    width:.36rem;height:.36rem;background: url("../images/xiaolian-a.png") no-repeat;background-size: cover;
+}
+.footer  p{
+    text-align:center;font-size:.26rem;padding-top:.15rem;color:#a9b0b4;
+}
+.footer-left .first{
+    color:#188AE4;
+}
+
+
+
+
+
+
+
